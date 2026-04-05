@@ -18,11 +18,7 @@ font-size: 110% }
 
 @font-face {
     font-family: 'nootregular';
-    src: url('fonts/noot-aj.eot');
-    src: url('fonts/noot-aj.eot?#iefix') format('embedded-opentype'),
-         url('fonts/noot-aj.woff') format('woff'),
-         url('fonts/noot-aj.ttf') format('truetype'),
-         url('fonts/noot-aj.svg#nootregular') format('svg');
+    src: url('fonts/noot-aj.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -30,12 +26,7 @@ font-size: 110% }
 
 @font-face {
     font-family: 'josefin_sansregular';
-    src: url('fonts/josefinsans-regular-webfont.eot');
-    src: url('fonts/josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/josefinsans-regular-webfont.woff2') format('woff2'),
-         url('fonts/josefinsans-regular-webfont.woff') format('woff'),
-         url('fonts/josefinsans-regular-webfont.ttf') format('truetype'),
-         url('fonts/josefinsans-regular-webfont.svg#josefin_sansregular') format('svg');
+    src: url('fonts/josefinsans-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -43,11 +34,7 @@ font-size: 110% }
 
 @font-face {
     font-family: 'blackout_midnight';
-    src: url('fonts/blackout_midnight-webfont.eot');
-    src: url('fonts/blackout_midnight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/blackout_midnight-webfont.woff') format('woff'),
-         url('fonts/blackout_midnight-webfont.ttf') format('truetype'),
-         url('fonts/blackout_midnight-webfont.svg#nootregular') format('svg');
+    src: url('fonts/blackout_midnight-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
