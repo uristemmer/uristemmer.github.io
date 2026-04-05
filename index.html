@@ -1,9 +1,657 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="refresh" content="0; URL=https://www.uri.co.il/" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uri Stemmer</title>
 </head>
-<body>
-<p>If you are not redirected, <a href="https://www.uri.co.il/">click here</a>.</p>
-</body>
-</html>
+<body style="font-family: 'josefin_sansregular', arial, helvetica, sans-serif; font-size: 105%"> 
+<!-- <body style="font-family: 'Crimson', arial, helvetica, sans-serif;"> -->
+
+<!-- BEGIN: Page Content -->
+<div id="container">
+
+<div id="rightImage">
+<img src="uri-round.jpg" style="max-width:90%;"> <!--style="float:right; margin-right:25px;" -->
+<br>
+<strong><div id="rightEmail">u@uri.co.il</div></strong>
+</div>
+
+<h1>Uri Stemmer <br class="showForMobile"> <div style="display:inline; font-size: 85%">(אורי שטמר)</div></h1>
+
+I am an Associate Professor of Computer Science at <a href="https://en.cs.tau.ac.il/computer">Tel Aviv University</a> and a part time researcher at <a href="https://research.google/">Google</a>.<br><br>
+
+Previously, I was a faculty member at <a href="http://www.cs.bgu.ac.il">Ben-Gurion University</a>, a postdoc at the <a href="https://www.weizmann.ac.il/math/">Weizmann Institute of Science</a>, and a postdoc at <a href="http://crcs.seas.harvard.edu">Harvard University</a>. 
+I completed my PhD at Ben-Gurion University, where I was lucky to have <a href="https://www.cs.bgu.ac.il/~beimel/">Amos Beimel</a> and <a href="https://people.cs.georgetown.edu/~kobbi/">Kobbi Nissim</a> as my advisors.<br><br>
+
+<big><strong>Research Interests</big></strong><br>
+Privacy-preserving data analysis, computational learning theory, algorithms.
+<br><br>
+
+<div class="showForMobile">
+<big><strong>Email:</big></strong><br>
+u@uri.co.il
+<br><br>
+</div>
+
+
+
+<big><strong>News</big></strong><br>
+
+<ul style="list-style-type: '&#10045;'; padding-left: 17px; margin-top: 0px;">    <!-- style="list-style-type: '&#8921;';" -->
+
+<li style="padding-left: 13px;">Congrats to Refael on his <a href="https://arxiv.org/abs/2602.16697">unlearning paper</a> getting accepted to FORC'26!!</li>
+
+<li style="padding-left: 13px;">New paper on <a href="https://arxiv.org/abs/2601.21989">adaptive "resettable" streaming</a> posted on arXiv</li>
+
+<li style="padding-left: 13px;">One paper in ICLR'26!</li>
+
+<li style="padding-left: 13px; color: red;">Promoted to associate professor with tenure. Thanks to everyone who helped me get here!</li>
+
+<li style="padding-left: 13px;">Two papers in ITCS'26: One on <a href="https://arxiv.org/abs/2509.05870">robust distributed counting</a> and one on <a href="https://arxiv.org/abs/2505.23658">defining reconstruction</a> (following up on our ITCS'25 reconstruction paper)</li>
+
+<li style="padding-left: 13px;">One paper in SODA'26!</li>
+
+<li style="padding-left: 13px;">Congrats to Emma on her first paper!! (Accepted to NeurIPS'25)</li>
+
+</ul>
+
+
+
+
+
+<big><strong>Professional Activities</big></strong><br>
+
+<ul style="list-style-type: '&#10045;'; padding-left: 17px; margin-top: 0px;">
+
+<li style="padding-left: 13px;">
+I taught a mini course at the <a href="https://bostondataprivacy.github.io/summerschool/">Boston DP Summer School (2022)</a>. See the slides here: 
+<a href="BU_DP_SCHOOL_Lecture1.pdf">1</a> 
+<a href="BU_DP_SCHOOL_Lecture2.pdf">2</a> 
+<a href="BU_DP_SCHOOL_Lecture3.pdf">3</a> 
+<a href="BU_DP_SCHOOL_Lecture4.pdf">4</a>. 
+</li>
+
+
+<li style="padding-left: 13px;">
+I co-organized a <a href="https://rajeshjayaram.com/stoc-2021-robust-streaming-workshop.html">STOC 2021 Workshop</a> on Robust Streaming, Sketching, and Sampling <a href="https://youtu.be/svgv-xw9DZc"><div class="play"></div></a>
+</li>
+
+<li style="padding-left: 13px;">
+<strong>Program committees:</strong> &nbsp;
+TPDP'19, 
+ICDT'20, 
+ALT'20, 
+TCC'20, 
+TPDP'20, 
+ITC'21, 
+NeurIPS'21 <font color=gray>(area chair)</font>, 
+ICML'22 <font color=gray>(area chair)</font>, 
+NeurIPS'22 <font color=gray>(area chair)</font>, 
+ICML'23 <font color=gray>(area chair)</font>, 
+PODS'24, 
+FORC'24, 
+ICML'24 <font color=gray>(area chair)</font>, 
+TPDP'24, 
+ALT'25 <font color=gray>(area chair)</font>, 
+ICML'25 <font color=gray>(area chair)</font>, 
+TPDP'25, 
+NeurIPS'25 <font color=gray>(area chair)</font>, 
+ALT'26 <font color=gray>(area chair)</font>, 
+STOC'26
+</li>
+
+</ul>
+<br>
+
+
+<strong><div style="font-family: 'blackout_midnight', arial, helvetica, sans-serif; display:inline; font-size: 130%">Teaching</div></strong><br>
+<br>
+
+
+<strong><big>Lecture notes for courses I have taught </strong></big><br>
+
+<ul style="list-style-type: '&#10045;'; padding-left: 17px; margin-top: 0px;"> 
+<li style="padding-left: 13px;"><a href="DataPrivacy.php">Data Privacy</a></li>
+<li style="padding-left: 13px;"><a href="AdaptiveDataAnalysis.php">Adaptive Data Analysis</a></li>
+<li style="padding-left: 13px;"><a href="Cryptography2.php">Cryptography 2</a></li>
+<li style="padding-left: 13px;"><a href="DesignOfAlgorithms.php">Design of Algorithms</a></li>
+<li style="padding-left: 13px;"><a href="ComputationalModels.php">Computational Models</a></li>
+</ul>
+
+
+
+<big><strong>Current students</big></strong><br>
+
+<ul style="list-style-type: '&#9733;'; padding-left: 17px; margin-top: 0px;">
+<li style="padding-left: 13px;"><a href="https://www.shechner.com">Moshe Shechner</a>, co-advised with Edith Cohen</li>
+<li style="padding-left: 13px;">Refael Kohen</li>
+<li style="padding-left: 13px;">Emma Rapoport</li>
+</ul>
+
+
+
+<big><strong>Former students</big></strong><br>
+
+<ul style="list-style-type: '&#9733;'; padding-left: 17px; margin-top: 0px;">
+<li style="padding-left: 13px;">Rotem Yeskin, MSc 2026. Now at Nvidia</li>
+<li style="padding-left: 13px;">Shachar Schnapp, PhD 2024, co-advised with Sivan Sabato. Now co-founder at PVML</li>
+<li style="padding-left: 13px;"><a href="https://menisadi.github.io">Menachem Sadigurschi</a>, PhD 2023, co-advised with Aryeh Kontorovich. Now at Intent IQ</li>
+</ul>
+
+
+
+
+<br>
+
+
+<strong><div style="font-family: 'blackout_midnight', arial, helvetica, sans-serif; display:inline; font-size: 130%">Publications</div></strong><br>
+
+
+<ol reversed start="64" class="publication-list">
+
+
+<li>
+<a href="https://arxiv.org/abs/2601.21989"><strong>Adaptively Robust Resettable Streaming</strong></a><br>
+Edith Cohen, Elena Gribelyuk, Jelani Nelson, and Uri Stemmer
+<div style="font-size: 90%; color: gray;">&#8594; To appear also at TPDP 2026</div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2602.16697"><strong>Protecting the Undeleted in Machine Unlearning</strong></a><br>
+Aloni Cohen, Refael Kohen, Kobbi Nissim, and Uri Stemmer
+<div style="font-size: 90%;"><strong>FORC 2026</strong></div>
+<div style="font-size: 90%; color: gray;">&#8594; To appear also at TPDP 2026</div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2312.02132"><strong>Hot PATE: Private Aggregation of Distributions for Diverse Tasks</strong></a><br>
+Edith Cohen, Benjamin Cohen-Wang, Xin Lyu, Jelani Nelson, Tam&aacute;s Sarl&oacute;s, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ICLR 2026</strong></div>
+</li>
+
+<li>
+<a href="https://arxiv.org/abs/2509.05870"><strong>A Simple and Robust Protocol for Distributed Counting</strong></a><a href="https://www.youtube.com/watch?v=qBls7iW5wAk&t=0s"><div class="play"></div></a><br>
+Edith Cohen, Moshe Shechner, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ITCS 2026</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2505.23658"><strong>Bayesian Perspective on Memorization and Reconstruction</strong></a><a href="https://youtu.be/28k1Qm7VA-0?si=lJ2Q0In6L_iqPwt8"><div class="play"></div></a><br>
+Haim Kaplan, Yishay Mansour, Kobbi Nissim, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ITCS 2026</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2411.06370"><strong>One Attack to Rule Them All: Tight Quadratic Bounds for Adaptive Queries on Cardinality Sketches</strong></a><br>
+Edith Cohen, Jelani Nelson, Tam&aacute;s Sarl&oacute;s, Mihir Singhal, Uri Stemmer
+<div style="font-size: 90%;"><strong>SODA 2026</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2507.13700"><strong>Tight Bounds for Answering Adaptively Chosen Concentrated Queries</strong></a><br>
+Emma Rapoport, Edith Cohen, and Uri Stemmer
+<div style="font-size: 90%;"><strong>NeurIPS 2025</strong></div>
+<div style="font-size: 90%; color: gray;">&#8594; To appear also at TPDP 2026</div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2507.16345"><strong>The Cost of Compression: Tight Quadratic Black-Box Attacks on Sketches for &ell;2 Norm Estimation</strong></a><br>
+Sara Ahmadian, Edith Cohen, and Uri Stemmer
+<div style="font-size: 90%;"><strong>NeurIPS 2025</strong></div>
+</li>
+
+
+
+<li>
+<strong>Private Set Union with Multiple Contributions</strong><br>
+Travis Dick, Haim Kaplan, Alex Kulesza, Uri Stemmer, Ziteng Sun, and Ananda Theertha Suresh
+<div style="font-size: 90%;"><strong>NeurIPS 2025 <font color=lime><em>(Spotlight)</em></font> </strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2505.05355"><strong>Nearly Optimal Sample Complexity for Learning with Label Proportions</strong></a><br>
+Robert Busa-Fekete, Travis Dick, Claudio Gentile, Haim Kaplan, Tomer Koren, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ICML 2025</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2502.05723"><strong>Breaking the Quadratic Barrier: Robust Cardinality Sketches for Adaptive Queries</strong></a><br>
+Edith Cohen, Mihir Singhal, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ICML 2025</strong></div>
+</li>
+
+
+<li>
+<a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2025.77"><strong>Minimizing Recourse in an Adaptive Balls and Bins Game</strong></a><a href="https://www.youtube.com/watch?v=qBls7iW5wAk&t=808s"><div class="play"></div></a><br>
+Adi Fine, Haim Kaplan, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ICALP 2025</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2411.03087"><strong>On Differentially Private Linear Algebra</strong></a><br>
+Haim Kaplan, Yishay Mansour, Shay Moran, Uri Stemmer, and Nitzan Tur
+<div style="font-size: 90%;"><strong>STOC 2025</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2405.15753"><strong>Data Reconstruction: When You See It and When You Don't</strong></a><br>
+Edith Cohen, Haim Kaplan, Yishay Mansour, Shay Moran, Kobbi Nissim, Uri Stemmer, and Eliad Tsfadia
+<div style="font-size: 90%;"><strong>ITCS 2025</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2401.04311"><strong>Private Truly-Everlasting Robust-Prediction</strong></a><br>
+Uri Stemmer
+<div style="font-size: 90%;"><strong>ICML 2024 <font color=lime><em>(Oral Presentation)</em></font></strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/2403.00028"><strong>Lower Bounds for Differential Privacy Under Continual Observation and Online Threshold Queries</strong></a><br>
+Edith Cohen, Xin Lyu, Jelani Nelson, Tam&aacute;s Sarl&oacute;s, and Uri Stemmer
+<div style="font-size: 90%;"><strong>COLT 2024</strong></div>
+<div style="font-size: 90%; color: gray;">&#8594; Presented also at TPDP 2024</div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2207.05047"><strong>MPC for Tech Giants (GMPC): Enabling Gulliver and the Lilliputians to Cooperate Amicably</strong></a><br>
+Bar Alon, Moni Naor, Eran Omri, and Uri Stemmer
+<div style="font-size: 90%;"><strong>CRYPTO 2024</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2305.15452"><strong>Adaptive Data Analysis in a Balanced Adversarial Model</strong></a><br>
+Kobbi Nissim, Uri Stemmer, and Eliad Tsfadia
+<div><span style="font-size: 90%;"><strong>NeurIPS 2023 <font color=lime><em>(Spotlight)</em></font></strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2305.09579"><strong>Private Everlasting Prediction</strong></a><br>
+Moni Naor, Kobbi Nissim, Uri Stemmer, and Chao Yan
+<div><span style="font-size: 90%;"><strong>NeurIPS 2023 <font color=lime><em>(Oral Presentation)</em></font></strong></div>
+<div style="font-size: 90%; color: gray;">&#8594; Presented also at TPDP 2023</div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2302.14099"><strong>Black-Box Differential Privacy for Interactive ML</strong></a><a href="https://youtu.be/NJOsIymsJUY"><div class="play"></div></a><br>
+Haim Kaplan, Yishay Mansour, Shay Moran, Kobbi Nissim, and Uri Stemmer
+<div style="font-size: 90%;"><strong>NeurIPS 2023</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2301.09203"><strong>Relaxed Models for Adversarial Streaming: The Bounded Interruptions Model and the Advice Model</strong></a><br>
+Menachem Sadigurschi, Moshe Shechner, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ESA 2023</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2301.12535"><strong>Concurrent Shuffle Differential Privacy Under Continual Observation</strong></a><br>
+Jay Tenenbaum, Haim Kaplan, Yishay Mansour, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ICML 2023</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2211.06387"><strong>&Otilde;ptimal Differentially Private Learning of Thresholds and Quasi-Concave Optimization</strong></a><a href="https://youtu.be/sAvJKoT-72c"><div class="play"></div></a><br>
+Edith Cohen, Xin Lyu, Jelani Nelson, Tam&aacute;s Sarl&oacute;s, and Uri Stemmer
+<div style="font-size: 90%;"><strong>STOC 2023</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2302.05707"><strong>On Differential Privacy and Adaptive Data Analysis with Bounded Space</strong></a><br>
+Itai Dinur, Uri Stemmer, David P. Woodruff, and Samson Zhou
+<div style="font-size: 90%;"><strong>Eurocrypt 2023</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2207.00956"><strong>Tricking the Hashing Trick: A Tight Lower Bound on the Robustness of CountSketch to Adaptive Inputs</strong></a><br>
+Edith Cohen, Jelani Nelson, Tam&aacute;s Sarl&oacute;s, and Uri Stemmer
+<div style="font-size: 90%;"><strong>AAAI 2023</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2211.12063"><strong>Generalized Private Selection and Testing with High Confidence</strong></a><br>
+Edith Cohen, Xin Lyu, Jelani Nelson, Tam&aacute;s Sarl&oacute;s, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ITCS 2023</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2107.14527"><strong>A Framework for Adversarial Streaming via Differential Privacy and Difference Estimators</strong></a><br>
+Idan Attias, Edith Cohen, Moshe Shechner, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ITCS 2023</strong> and <strong>Algorithmica</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/2202.13736"><strong>On the Robustness of CountSketch to Adaptive Inputs</strong></a><a href="https://youtu.be/xt6YB8PO8aE"><div class="play"></div></a><br>
+Edith Cohen, Xin Lyu, Jelani Nelson, Tam&aacute;s Sarl&oacute;s, Moshe Shechner, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ICML 2022</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2201.08704"><strong>Adaptive Data Analysis with Correlated Observations</strong></a><br>
+Aryeh Kontorovich, Menachem Sadigurschi, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ICML 2022</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2110.10132"><strong>FriendlyCore: Practical Differentially Private Aggregation</strong></a><br>
+Eliad Tsfadia, Edith Cohen, Haim Kaplan, Yishay Mansour, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ICML 2022</strong></div>
+<div style="font-size: 90%; color: gray;">&#8594; Presented also at TPDP 2022</div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2110.05429"><strong>Differentially Private Approximate Quantiles</strong></a><br>
+Haim Kaplan, Shachar Schnapp, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ICML 2022</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/2202.05246"><strong>Monotone Learning</strong></a><br>
+Olivier Bousquet, Amit Daniely, Haim Kaplan, Yishay Mansour, Shay Moran, and Uri Stemmer
+<div style="font-size: 90%;"><strong>COLT 2022</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/2111.03980"><strong>Dynamic Algorithms Against an Adaptive Adversary: Generic Constructions and Lower Bounds</strong></a><a href="https://youtu.be/miJk5ChquGI"><div class="play"></div></a><br>
+Amos Beimel, Haim Kaplan, Yishay Mansour, Kobbi Nissim, Thatchaphol Saranurak, and Uri Stemmer
+<div style="font-size: 90%;"><strong>STOC 2022</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/2107.11526"><strong>On the Sample Complexity of Privately Learning Axis-Aligned Rectangles</strong></a><br>
+Menachem Sadigurschi and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>NeurIPS 2021</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/2106.02900"><strong>Differentially Private Multi-Armed Bandits in the Shuffle Model</strong></a><br>
+Jay Tenenbaum, Haim Kaplan, Yishay Mansour, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>NeurIPS 2021</strong></div>
+</li>
+
+
+<li>
+<a href="https://aclanthology.org/2021.findings-emnlp.102/"><strong>Learning and Evaluating a Differentially Private Pre-trained Language Model</strong></a><br>
+Shlomo Hoory, Amir Feder, Avichai Tendler, Sofia Erell, Alon Peled-Cohen, Itay Laish, Hootan Nakhost, Uri Stemmer, Ayelet Benjamini, Avinatan Hassidim, and Yossi Matias<br>
+<div style="font-size: 90%;"><strong>EMNLP Findings 2021</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2101.10836"><strong>Separating Adaptive Streaming from Oblivious Streaming</strong></a><a href="https://youtu.be/Whu-6lVYFXc"><div class="play"></div></a><br>
+Haim Kaplan, Yishay Mansour, Kobbi Nissim, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>CRYPTO 2021</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2010.00917"><strong>The Sparse Vector Technique, Revisited</strong></a><br>
+Haim Kaplan, Yishay Mansour, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>COLT 2021</strong></div>
+</li>
+
+
+<li>
+<a href="http://proceedings.mlr.press/v139/cohen21c.html"><strong>Differentially-Private Clustering of Easy Instances</strong></a><br>
+Edith Cohen, Haim Kaplan, Yishay Mansour, Uri Stemmer, and Eliad Tsfadia<br>
+<div style="font-size: 90%;"><strong>ICML 2021</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2010.13048"><strong>Differentially Private Weighted Sampling</strong></a><br>
+Edith Cohen, Ofir Geri, Tam&aacute;s Sarl&oacute;s, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>AISTATS 2021</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/2004.05975"><strong>Adversarially Robust Streaming Algorithms via Differential Privacy</strong></a><a href="https://youtu.be/Whu-6lVYFXc"><div class="play"></div></a><br>
+Avinatan Hassidim, Haim Kaplan, Yishay Mansour, Yossi Matias, and Uri Stemmer<br>
+<span style="font-size: 90%;"><strong>NeurIPS 2020 <font color=lime><em>(Oral Presentation)</em></font></strong>
+and
+<strong>
+Journal of the ACM
+</strong>
+</span>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2004.07839"><strong>Private Learning of Halfspaces: Simplifying the Construction and Reducing the Sample Complexity</strong></a><br>
+Haim Kaplan, Yishay Mansour, Uri Stemmer, and Eliad Tsfadia<br>
+<div style="font-size: 90%;"><strong>NeurIPS 2020</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2009.13510"><strong>On the Round Complexity of the Shuffle Model</strong></a><a href="https://youtu.be/FkKbjgJ_RBs"><div class="play"></div></a><br>
+Amos Beimel, Iftach Haitner, Kobbi Nissim, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>TCC 2020</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/2003.04509"><strong>Closure Properties for Private Classification and Online Prediction</strong></a><br>
+Noga Alon, Amos Beimel, Shay Moran, and Uri Stemmer
+<div style="font-size: 90%;"><strong>COLT 2020</strong></div>
+<div style="font-size: 90%; color: gray;">&#8594; Presented also at TPDP 2020</div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1911.10137"><strong>Privately Learning Thresholds: Closing the Exponential Gap</strong></a><a href="https://youtu.be/uGTfJsJAkh0"><div class="play"></div>  </a><br>
+Haim Kaplan, Katrina Ligett, Yishay Mansour, Moni Naor, and Uri Stemmer
+<div style="font-size: 90%;"><strong>COLT 2020</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1912.08951"><strong>The power of synergy in differential privacy: Combining a small curator with local randomizers</strong></a><a href="https://youtu.be/dkZa57bTfjI?t=2077"><div class="play"></div>  </a><br>
+Amos Beimel, Aleksandra Korolova, Kobbi Nissim, Or Sheffet, and Uri Stemmer
+<div style="font-size: 90%;"><strong>ITC 2020</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/2003.13192"><strong>How to Find a Point in the Convex Hull Privately</strong></a><a href="https://www.youtube.com/watch?v=b7G3Rhr2GZ0"><div class="play"></div>  </a><br>
+Haim Kaplan, Micha Sharir, and Uri Stemmer
+<div style="font-size: 90%;"><strong>SoCG 2020</strong></div>
+</li>
+
+
+<li>
+<a href="http://proceedings.mlr.press/v108/shechner20a.html"><strong>Private k-Means Clustering with Stability Assumptions</strong></a><br>
+Moshe Shechner, Or Sheffet, and Uri Stemmer
+<div style="font-size: 90%;"><strong>AISTATS 2020</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1907.02513"><strong>Locally Private k-Means Clustering</strong></a><br>
+Uri Stemmer
+<div style="font-size: 90%;"><strong>SODA 2020</strong> and <strong>Journal of Machine Learning Research</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/1902.05017"><strong>Differentially Private Learning of Geometric Concepts</strong></a><br>
+Haim Kaplan, Yishay Mansour, Yossi Matias, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>ICML 2019</strong> and <strong>SIAM Journal on Computing</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/1902.10731"><strong>Private Center Points and Learning of Halfspaces</strong></a><br>
+Amos Beimel, Shay Moran, Kobbi Nissim, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>COLT 2019</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1806.06100"><strong>The Limits of Post-Selection Generalization</strong></a> <a href="https://www.youtube.com/watch?v=WodGZvlxLKA"><div class="play"></div>  </a><br>
+Kobbi Nissim, Adam Smith, Thomas Steinke, Uri Stemmer, and Jonathan Ullman<br>
+<div style="font-size: 90%;"><strong>NeurIPS 2018</strong></div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/1804.08001"><strong>Differentially Private k-Means with Constant Multiplicative Error</strong></a> <a href="http://www.birs.ca/events/2018/5-day-workshops/18w5189/videos/watch/201804301047-Stemmer.html"><div class="play"></div>  </a><br>
+Haim Kaplan and Uri Stemmer<br>
+<span style="font-size: 90%;"><strong>NeurIPS 2018</span> <font color=lime><em>(Spotlight)</em></font></strong>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1711.04740"><strong>Heavy Hitters and the Structure of Local Privacy</strong></a><br>
+Mark Bun, Jelani Nelson, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>PODS 2018</strong> and <strong>Transactions on Algorithms</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1707.04766"><strong>Clustering Algorithms for the Centralized and Local Models</strong></a><br>
+Kobbi Nissim and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>ALT 2018</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1703.01970"><strong>Concentration Bounds for High Sensitivity Functions Through Differential Privacy</strong></a><br>
+Kobbi Nissim and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>Journal of Privacy and Confidentiality</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1707.04982"><strong>Practical Locally Private Heavy Hitters</strong></a><br>
+Raef Bassily, Kobbi Nissim, Uri Stemmer, and Abhradeep Thakurta<br>
+<div style="font-size: 90%;"><strong>NIPS 2017</strong> and <strong>Journal of Machine Learning Research</strong></div>
+<div style="font-size: 90%; color: gray;">&#8594; Presented also at TPDP 2017 and at HALG 2018</div>
+</li>
+
+
+
+<li>
+<a href="https://arxiv.org/abs/1604.05590"><strong>Locating a Small Cluster Privately</strong></a><br>
+Kobbi Nissim, Uri Stemmer, and Salil Vadhan<br>
+<div style="font-size: 90%;"><strong>PODS 2016</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1511.02513"><strong>Algorithmic Stability for Adaptive Data Analysis</strong></a><br>
+Raef Bassily, Kobbi Nissim, Adam Smith, Thomas Steinke, Uri Stemmer, and Jonathan Ullman<br>
+<div style="font-size: 90%;"><strong>STOC 2016</strong> and <strong>SIAM Journal on Computing <font color=lime><em>(by invitation)</em></font></strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1511.08552"><strong>Simultaneous Private Learning of Multiple Concepts</strong></a><br>
+Mark Bun, Kobbi Nissim, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>ITCS 2016</strong> and <strong>Journal of Machine Learning Research</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1504.07553"><strong>Differentially Private Release and Learning of Threshold Functions</strong></a><br>
+Mark Bun, Kobbi Nissim, Uri Stemmer, and Salil Vadhan<br>
+<div style="font-size: 90%;"><strong>FOCS 2015</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1407.2662"><strong>Learning Privately with Labeled and Unlabeled Examples</strong></a><br>
+Amos Beimel, Kobbi Nissim, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>SODA 2015</strong> and <strong>Algorithmica</strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1407.2674"><strong>Private Learning and Sanitization: Pure vs. Approximate Differential Privacy</strong></a><br>
+Amos Beimel, Kobbi Nissim, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>RANDOM 2013</strong> and <strong>Theory of Computing <font color=lime><em>(by invitation)</em></font></strong></div>
+</li>
+
+
+<li>
+<a href="https://arxiv.org/abs/1402.2224"><strong>Characterizing the Sample Complexity of Private Learners</strong></a><br>
+Amos Beimel, Kobbi Nissim, and Uri Stemmer<br>
+<div style="font-size: 90%;"><strong>ITCS 2013</strong> and <strong>Journal of Machine Learning Research</strong></div>
+</li>
+
+</ol>
+
+<br>
+
+<p><big><strong>Other Manuscripts</big></strong></p>
+
+<ul style="list-style-type: '&#10045;'; padding-left: 17px; margin-top: 0px;"> 
+<li style="padding-left: 13px;"><a href="thesis.pdf"><strong>Individuals and Privacy in the Eye of Data Analysis</strong></a>. <em>PhD Thesis</em></li>
+<li style="padding-left: 13px;"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3447857"><strong>Privacy Preserving Social Norm Nudges</strong></a>. Yifat Nahmias, Oren Perez, Yotam Shlomo, and Uri Stemmer. <em>Michigan Technology Law Review</em></li>
+<li style="padding-left: 13px;"><a href="https://arxiv.org/abs/2111.13762"><strong>A Note on Sanitizing Streams with Differential Privacy</strong></a>. Haim Kaplan and Uri Stemmer</li>
+</ul>
+<br>
+
+
+<strong><div style="font-family: 'blackout_midnight', arial, helvetica, sans-serif; display:inline; font-size: 130%">Links</div></strong><br>
+<br>
+
+
+<a href="https://www.cs.bgu.ac.il/~beimel/">Amos Beimel</a>,
+<a href="https://people.cs.georgetown.edu/~kobbi/">Kobbi Nissim</a>,
+<a href="https://www.wisdom.weizmann.ac.il/~naor/">Moni Naor</a>,
+<a href="https://www.linkedin.com/in/ilan-shallom-8446a612/">Ilan Shallom</a>,
+<a href="https://sites.google.com/view/aryeh-home/home">Aryeh Kontorovich</a>,
+<a href="avner.php">Avner</a> <a href="https://tzin.bgu.ac.il/~stemmer/avner.html">Stemmer</a>,
+<a href="https://www.facebook.com/dana.wettstein">Dana Stemmer</a>,
+<a href="https://tzin.bgu.ac.il/~mayast/">Maya Stemmer</a>
+
+<br><br>
+</div>
+
+
+</body></html>
