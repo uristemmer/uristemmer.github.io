@@ -1,0 +1,144 @@
+a {color:blue; text-decoration:none;}
+
+img { border:none; padding:5px 5px;}
+
+body { margin:0; padding:0; }
+ 
+#container { margin:0 auto; overflow:auto; padding:20px 0; width:90%; max-width:900px; text-align:justify}
+ 
+#rightImage { margin:0 auto; overflow:auto; padding:5px 0; width:30%; max-width:300px; text-align:justify; float:right; text-align:center;}
+
+#rightEmail{ 
+/* font-family: 'blackout_midnight', arial, helvetica, sans-serif; */
+font-family: serif, arial, helvetica, sans-serif;
+display:inline; 
+font-size: 110% }
+
+
+
+@font-face {
+    font-family: 'nootregular';
+    src: url('fonts/noot-aj.eot');
+    src: url('fonts/noot-aj.eot?#iefix') format('embedded-opentype'),
+         url('fonts/noot-aj.woff') format('woff'),
+         url('fonts/noot-aj.ttf') format('truetype'),
+         url('fonts/noot-aj.svg#nootregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('fonts/josefinsans-regular-webfont.eot');
+    src: url('fonts/josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('fonts/josefinsans-regular-webfont.woff') format('woff'),
+         url('fonts/josefinsans-regular-webfont.ttf') format('truetype'),
+         url('fonts/josefinsans-regular-webfont.svg#josefin_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blackout_midnight';
+    src: url('fonts/blackout_midnight-webfont.eot');
+    src: url('fonts/blackout_midnight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/blackout_midnight-webfont.woff') format('woff'),
+         url('fonts/blackout_midnight-webfont.ttf') format('truetype'),
+         url('fonts/blackout_midnight-webfont.svg#nootregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+h1 {
+	font-family: 'nootregular', arial, helvetica, sans-serif;
+	font-size: 250%;
+}
+
+.showForMobile{ display: none; }
+
+@media (max-width: 900px){	/*side menu is hidden*/
+	#rightEmail{ display:none; }
+	.showForMobile{ display: inline; }
+	#rightImage{ max-width: 200px;}
+}
+
+@media (max-width: 500px){	/*side menu is hidden*/
+	h1 { font-size: 200%; }
+	
+}
+
+@media (max-width: 400px){	/*side menu is hidden*/
+	h1 { font-size: 150%; }
+	
+}
+
+.play { 
+  display: inline-block;
+  background: red;
+  border-radius: 50% / 10%;
+  color: #FFFFFF;
+  font-size: 0.3em; /* change this to change size */
+  height: 3em;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-indent: 0.1em;
+  transition: all 150ms ease-out;
+  width: 4em;
+  margin-left: 10px;
+}
+
+.play:hover {
+  background: darkorange;
+}
+
+.play::before { 
+  background: inherit;
+  border-radius: 5% / 50%;
+  bottom: 9%;
+  content: "";
+  left: -5%;
+  position: absolute;
+  right: -5%;
+  top: 9%;
+}
+
+.play::after {
+  border-style: solid;
+  border-width: 1em 0 1em 1.732em;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.75);
+  content: ' ';
+  font-size: 0.75em;
+  height: 0;
+  margin: -1em 0 0 -0.75em;
+  top: 50%;
+  position: absolute;
+  width: 0;
+}
+
+
+.publication-list {
+  /* Remove the default browser numbering (the ones with periods) */
+  list-style-type: none; 
+  /* Add some left padding so the text doesn't hit the left edge */
+  padding-left: 3rem; 
+}
+
+.publication-list li {
+  position: relative;
+  margin-bottom: 1.2rem; /* Adds space between each publication */
+}
+
+/* This creates the automatic [ ] numbering */
+.publication-list li::before {
+  /* counter(list-item) hooks into the automatic reverse count from the <ol> tag */
+  content: "[" counter(list-item) "]"; 
+  position: absolute;
+  left: -3rem; /* Pushes the number to the left of the text */
+}
